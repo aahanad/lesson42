@@ -29,4 +29,14 @@ def sum(n,e):
         return n* sum (n,e-1)
 print (sum(n,e))
 sum(n,e)
+#ice cream tub
+def empty_scoops(n):
+    if n == 0:
+        print("All scoops are gone. The tub is empty!")
+        return
+    else:
+        print(f"Scoop number {n} removed...")
+        empty_scoops(n - 1)
+n=int(input("How many scoops do you want? "))
+empty_scoops(n)
 
